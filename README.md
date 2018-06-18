@@ -13,6 +13,21 @@ __*Empty project*__ which does heaps of cool stuff.
 
 
 # Install
+
+__*Prerequisite - WebTask*__
+
+```
+npm install wt-cli -g
+```
+
+Create a free account or login to an existing account:
+
+```
+wt init
+```
+
+__*Install Proxio*__
+
 ```
 git clone https://github.com/nicolasdao/template-emptyjs.git new-project-name
 cd new-project-name
@@ -22,6 +37,20 @@ npm start
 ```
 
 # How To Use It
+## Step 1 - Create Your Own HTTP Proxy Checker
+
+```
+wt create https://raw.githubusercontent.com/nicolasdao/proxio/master/src/webapi/proxyChecker.js --name check-proxy
+```
+
+This command will return a URI. Copy that URI and paste it inside your `package.json` inside a new property called `proxyChecker`. This should look like something similar to: 
+
+```js
+"proxyChecker": "https://wt-70eb194b5cfe6a0f4w6896f5b3fcfrb3-0.sandbox.auth0-extend.com/check-proxy"
+```
+
+Congratulation, you know have created a new HTTP GET endpoint that will help test whether your list of proxies is anonymous or not. You can use this new endpoint right now by pasting the URI into your browser and check the result yourself.
+
 ## Basic
 
   | #  |Task             | Command                                                       | Note                                               | 
