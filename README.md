@@ -4,7 +4,6 @@ __*Empty project*__ which does heaps of cool stuff.
 # Table of Contents
 
 > * [Install](#install) 
-> * [Install](#install-1) 
 > * [How To Use It](#how-to-use-it) 
 >   - [Basic](#basic)
 >   - [Config](#config)
@@ -36,8 +35,6 @@ npm install
 npm test
 npm start
 ```
-
-# Install
 
 # How To Use It
 ## Step 1 - Create Your Own HTTP Proxy Checker
